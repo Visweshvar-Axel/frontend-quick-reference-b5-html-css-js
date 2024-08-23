@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML & CSS Cheat Sheet</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body class="dark-theme">
     <div class="container">
@@ -77,40 +77,6 @@
         </section>
     </div>
 
-    <script>
-        // toggle
-        function toggleTheme() {
-            const body = document.body;
-            body.classList.toggle('dark-theme');
-            const themeSwitcher = document.querySelector('.theme-switcher');
-            if (body.classList.contains('dark-theme')) {
-                themeSwitcher.textContent = 'Switch to Light Theme';
-            } else {
-                themeSwitcher.textContent = 'Switch to Dark Theme';
-            }
-        }
-
-        // right
-        function toggleOutputRight() {
-            const outputRight = document.getElementById('output-right');
-            const outputBelow = document.getElementById('output-below');
-            const syntax = document.getElementById('syntax');
-            
-            outputRight.classList.toggle('show');
-            outputBelow.classList.remove('show');
-            syntax.classList.toggle('half-width', outputRight.classList.contains('show'));
-        }
-
-        // below
-        function toggleOutputBelow() {
-            const outputBelow = document.getElementById('output-below');
-            const outputRight = document.getElementById('output-right');
-            const syntax = document.getElementById('syntax');
-            
-            outputBelow.classList.toggle('show');
-            outputRight.classList.remove('show');
-            syntax.classList.remove('half-width');
-        }
-    </script>
+    <script src="js/toggle.js"></script>
 </body>
 </html>

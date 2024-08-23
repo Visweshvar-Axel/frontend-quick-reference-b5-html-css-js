@@ -195,3 +195,45 @@ section {
     background-color: #0056b3;
 }
 /* Toggle Buttons Styles */
+/* Resizing Styles */
+
+.split {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.syntax, .output-right {
+    flex: 1;
+    padding: 20px;
+    overflow: auto;
+    transition: flex-basis 0.3s ease;
+}
+
+.resizer {
+    width: 10px;
+    cursor: ew-resize;
+    background-color: #444;
+    flex-grow: 0;
+    flex-shrink: 0;
+    height: auto;
+}
+
+.syntax.half-width, .output-right.half-width {
+    flex: 0.5;
+}
+
+.output-below.show {
+    display: block;
+    width: 100%;
+}
+
+.output-right.show {
+    display: block;
+}
+
+.output-below, .output-right {
+    display: none;
+}
+
+/* Resizing Styles */

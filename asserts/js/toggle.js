@@ -1,4 +1,4 @@
-// dark theme
+// Function to toggle the theme
 function toggleTheme() {
     const body = document.body;
     body.classList.toggle('dark-theme');
@@ -10,27 +10,28 @@ function toggleTheme() {
     }
 }
 
-// toggle output right
-function toggleOutputRight() {
-    const outputRight = document.getElementById('output-right');
-    const outputBelow = document.getElementById('output-below');
-    const syntax = document.getElementById('syntax');
+// Function to toggle output on the right
+function toggleOutputRight(outputRightId, outputBelowId, syntaxId) {
+    const outputRight = document.getElementById(outputRightId);
+    const outputBelow = document.getElementById(outputBelowId);
+    const syntax = document.getElementById(syntaxId);
 
     outputRight.classList.toggle('show');
     outputBelow.classList.remove('show');
     syntax.classList.toggle('half-width', outputRight.classList.contains('show'));
 }
 
-// toggle output below
-function toggleOutputBelow() {
-    const outputBelow = document.getElementById('output-below');
-    const outputRight = document.getElementById('output-right');
-    const syntax = document.getElementById('syntax');
+// Function to toggle output below
+function toggleOutputBelow(outputBelowId, outputRightId, syntaxId) {
+    const outputBelow = document.getElementById(outputBelowId);
+    const outputRight = document.getElementById(outputRightId);
+    const syntax = document.getElementById(syntaxId);
 
     outputBelow.classList.toggle('show');
     outputRight.classList.remove('show');
     syntax.classList.remove('half-width');
 }
+
 
 
 // // Function to toggle the dark theme

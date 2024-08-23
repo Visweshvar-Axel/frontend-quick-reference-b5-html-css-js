@@ -1,49 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HTML & CSS Cheat Sheet</title>
-    <link rel="stylesheet" href="asserts/css/styles.css" />
-  </head>
-  <body class="dark-theme">
-    <div class="container">
-      <header>
-        <h1>HTML & CSS Cheat Sheet</h1>
-        <button class="theme-switcher" onclick="toggleTheme()">
-          Switch to Dark Theme
-        </button>
-      </header>
-
-      <!-- Table of Contents -->
-      <nav class="toc">
-        <h2>Topics</h2>
-        <ul>
-          <li><a href="#html-basics">HTML Basics</a></li>
-          <li><a href="#css-basics">CSS Basics</a></li>
-          <li><a href="#advanced-css">Advanced CSS</a></li>
-        </ul>
-      </nav>
-
-      <!-- HTML Basics Section -->
-      <section id="html-basics">
-        <h2>HTML Basics</h2>
-        <p>
-          HTML (Hypertext Markup Language) is the standard language for creating
-          web pages and applications.
-        </p>
-        <div class="split">
-          <!-- Syntax -->
-          <div class="syntax" id="syntax">
-            <!-- Toggle -->
-            <button class="toggle-right-button" onclick="toggleOutputRight()">
-              &#x2192;
-            </button>
-            <button class="toggle-below-button" onclick="toggleOutputBelow()">
-              &#x2193;
-            </button>
-            <h3>Syntax Code</h3>
-            <pre><xmp>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>HTML & CSS Cheat Sheet</title>
+        <link rel="stylesheet" href="asserts/css/styles.css" />
+    </head>
+    <body class="dark-theme">
+        <div class="container">
+            <header>
+                <h1>HTML & CSS Cheat Sheet</h1>
+                <button class="theme-switcher" onclick="toggleTheme()">
+                    Switch to Dark Theme
+                </button>
+            </header>
+            
+            <!-- Table of Contents -->
+            <nav class="toc">
+                <h2>Topics</h2>
+                <ul>
+                    <li><a href="#html-basics">HTML Basics</a></li>
+                    <li><a href="#Quatation-and-siteation">Quatation and siteation</a></li>
+                    <li><a href="#css-basics">CSS Basics</a></li>
+                    <li><a href="#advanced-css">Advanced CSS</a></li>
+                </ul>
+            </nav>
+            
+            <!-- ************************************ -->
+            <!-- *********HTML Basics Section******** -->
+            <!-- ************************************ -->
+            <section id="html-basics">
+                <h2>HTML Basics</h2>
+                <p>
+                    HTML (Hypertext Markup Language) is the standard language for creating
+                    web pages and applications.
+                </p>
+                <div class="split">
+                    <!-- Syntax -->
+                    <div class="syntax" id="syntax">
+                        <!-- Toggle -->
+                        <button class="toggle-right-button" onclick="toggleOutputRight()">
+                            &#x2192;
+                        </button>
+                        <button class="toggle-below-button" onclick="toggleOutputBelow()">
+                            &#x2193;
+                        </button>
+                        <h3>Syntax Code</h3>
+                        <pre><xmp>
 <h1>Hello World</h1>
 <h2>Hello World</h2>
 <h3>Hello World</h3>
@@ -84,8 +87,77 @@
           <h6>Hello World</h6>
         </div>
       </section>
-    </div>
 
+
+      <!-- ************************************ -->
+      <!-- Quatation and siteation tags Section -->
+      <!-- ************************************ -->
+      <section id="Quatation-and-siteation">
+          <h2>HTML Basics</h2>
+          <p>
+              HTML (Hypertext Markup Language) is the standard language for creating
+              web pages and applications.
+            </p>
+        <div class="split">
+            <!-- Syntax -->
+            <div class="syntax" id="syntax">
+                <!-- Toggle -->
+                <button class="toggle-right-button" onclick="toggleOutputRight()">
+                    &#x2192;
+                </button>
+                <button class="toggle-below-button" onclick="toggleOutputBelow()">
+                    &#x2193;
+                </button>
+                <h3>Syntax Code</h3>
+                <pre><xmp>
+                    <b>bold test</b>
+                    <strong>strong test</strong>
+                    <italic>italic test</italic>
+                    <em>empharize test</em>
+                    <mark>marked test</mark>
+                    <small>small test</small>
+                    <del>deleted test</del>
+                    <ins>small test</ins>
+                    <h1>5<sup>2</sup>=25</h1>
+                    <h1>H<sub>2</sub>O</h1>
+                </xmp></pre>
+                <!-- <pre><code>
+                    &lt;h1&gt;&lt;xmp&gt;&lt;h1&gt;Hello World&lt;/h1&gt;&lt;/xmp&gt;&lt;/h1&gt;
+                    &lt;h2&gt;&lt;xmp&gt;&lt;h2&gt;Hello World&lt;/h2&gt;&lt;/xmp&gt;&lt;/h2&gt;
+                    &lt;h3&gt;&lt;xmp&gt;&lt;h3&gt;Hello World&lt;/h3&gt;&lt;/xmp&gt;&lt;/h3&gt;
+                    &lt;h4&gt;&lt;xmp&gt;&lt;h4&gt;Hello World&lt;/h4&gt;&lt;/xmp&gt;&lt;/h4&gt;
+                    &lt;h5&gt;&lt;xmp&gt;&lt;h5&gt;Hello World&lt;/h5&gt;&lt;/xmp&gt;&lt;/h5&gt;
+                    &lt;h6&gt;&lt;xmp&gt;&lt;h6&gt;Hello World&lt;/h6&gt;&lt;/xmp&gt;&lt;/h6&gt;
+                </code></pre> -->
+            </div>
+            
+            <!-- Output r -->
+            <div class="output-right" id="output-right">
+                <b>bold test</b>   <br>
+                <strong>strong test</strong>   <br>
+                <italic>italic test</italic>   <br>
+                <em>empharize test</em>   <br>
+                <mark>marked test</mark>   <br>
+                <small>small test</small>   <br>
+                <del>deleted test</del>   <br>
+                <ins>small test</ins>   <br>
+                <h1>5<sup>2</sup>=25</h1>
+                <h1>H<sub>2</sub>O</h1>
+            </div>
+        </section>
+        
+        <!-- ************************************ -->
+        <!-- Quatation and siteation tags Section -->
+        <!-- ************************************ -->
+        
+        
+        
+        
+        
+        
+        
+    </div>
+    
     <script src="asserts/js/toggle.js"></script>
   </body>
 </html>

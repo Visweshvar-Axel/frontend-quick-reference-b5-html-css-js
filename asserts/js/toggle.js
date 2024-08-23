@@ -26,11 +26,25 @@ function toggleOutputBelow(outputBelowId, outputRightId, syntaxId) {
     const outputBelow = document.getElementById(outputBelowId);
     const outputRight = document.getElementById(outputRightId);
     const syntax = document.getElementById(syntaxId);
-
+    
     outputBelow.classList.toggle('show');
     outputRight.classList.remove('show');
     syntax.classList.remove('half-width');
 }
+
+// Function to toggle Dropdown 
+document.querySelectorAll('.main-topic').forEach(item => {
+    item.addEventListener('click', function(event) {
+        event.preventDefault(); 
+        const sublist = this.nextElementSibling; 
+        if (sublist.style.display === 'block') {
+            sublist.style.display = 'none';
+        } else {
+            sublist.style.display = 'block';
+        }
+    });
+});
+
 
 
 

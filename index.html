@@ -1,40 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML & CSS Cheat Sheet</title>
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body class="dark-theme">
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body class="dark-theme">
     <div class="container">
-        <header>
-            <h1>HTML & CSS Cheat Sheet</h1>
-            <button class="theme-switcher" onclick="toggleTheme()">Switch to Dark Theme</button>
-        </header>
+      <header>
+        <h1>HTML & CSS Cheat Sheet</h1>
+        <button class="theme-switcher" onclick="toggleTheme()">
+          Switch to Dark Theme
+        </button>
+      </header>
 
-        <!-- Table of Contents -->
-        <nav class="toc">
-            <h2>Topics</h2>
-            <ul>
-                <li><a href="#html-basics">HTML Basics</a></li>
-                <li><a href="#css-basics">CSS Basics</a></li>
-                <li><a href="#advanced-css">Advanced CSS</a></li>
-            </ul>
-        </nav>
+      <!-- Table of Contents -->
+      <nav class="toc">
+        <h2>Topics</h2>
+        <ul>
+          <li><a href="#html-basics">HTML Basics</a></li>
+          <li><a href="#css-basics">CSS Basics</a></li>
+          <li><a href="#advanced-css">Advanced CSS</a></li>
+        </ul>
+      </nav>
 
-        <!-- HTML Basics Section -->
-        <section id="html-basics">
-            <h2>HTML Basics</h2>
-            <p>HTML (Hypertext Markup Language) is the standard language for creating web pages and applications.</p>
-            <div class="split">
-                <!-- Syntax -->
-                <div class="syntax" id="syntax">
-                    <!-- Toggle -->
-                    <button class="toggle-right-button" onclick="toggleOutputRight()">&#x2192;</button>
-                    <button class="toggle-below-button" onclick="toggleOutputBelow()">&#x2193;</button>
-                    <h3>Syntax Code</h3>
-                    <pre><xmp>
+      <!-- HTML Basics Section -->
+      <section id="html-basics">
+        <h2>HTML Basics</h2>
+        <p>
+          HTML (Hypertext Markup Language) is the standard language for creating
+          web pages and applications.
+        </p>
+        <div class="split">
+          <!-- Syntax -->
+          <div class="syntax" id="syntax">
+            <!-- Toggle -->
+            <button class="toggle-right-button" onclick="toggleOutputRight()">
+              &#x2192;
+            </button>
+            <button class="toggle-below-button" onclick="toggleOutputBelow()">
+              &#x2193;
+            </button>
+            <h3>Syntax Code</h3>
+            <pre><xmp>
 <h1>Hello World</h1>
 <h2>Hello World</h2>
 <h3>Hello World</h3>
@@ -42,7 +51,7 @@
 <h5>Hello World</h5>
 <h6>Hello World</h6>
                     </xmp></pre>
-                    <!-- <pre><code>
+            <!-- <pre><code>
                         &lt;h1&gt;&lt;xmp&gt;&lt;h1&gt;Hello World&lt;/h1&gt;&lt;/xmp&gt;&lt;/h1&gt;
                         &lt;h2&gt;&lt;xmp&gt;&lt;h2&gt;Hello World&lt;/h2&gt;&lt;/xmp&gt;&lt;/h2&gt;
                         &lt;h3&gt;&lt;xmp&gt;&lt;h3&gt;Hello World&lt;/h3&gt;&lt;/xmp&gt;&lt;/h3&gt;
@@ -50,33 +59,33 @@
                         &lt;h5&gt;&lt;xmp&gt;&lt;h5&gt;Hello World&lt;/h5&gt;&lt;/xmp&gt;&lt;/h5&gt;
                         &lt;h6&gt;&lt;xmp&gt;&lt;h6&gt;Hello World&lt;/h6&gt;&lt;/xmp&gt;&lt;/h6&gt;
                     </code></pre> -->
-                </div>
+          </div>
 
-                <!-- Output r -->
-                <div class="output-right" id="output-right">
-                    <h3>Output</h3>
-                    <h1>Hello World</h1>
-                    <h2>Hello World</h2>
-                    <h3>Hello World</h3>
-                    <h4>Hello World</h4>
-                    <h5>Hello World</h5>
-                    <h6>Hello World</h6>
-                </div>
-            </div>
+          <!-- Output r -->
+          <div class="output-right" id="output-right">
+            <h3>Output</h3>
+            <h1>Hello World</h1>
+            <h2>Hello World</h2>
+            <h3>Hello World</h3>
+            <h4>Hello World</h4>
+            <h5>Hello World</h5>
+            <h6>Hello World</h6>
+          </div>
+        </div>
 
-            <!-- Output b -->
-            <div class="output-below" id="output-below">
-                <h3>Output</h3>
-                <h1>Hello World</h1>
-                <h2>Hello World</h2>
-                <h3>Hello World</h3>
-                <h4>Hello World</h4>
-                <h5>Hello World</h5>
-                <h6>Hello World</h6>
-            </div>
-        </section>
+        <!-- Output b -->
+        <div class="output-below" id="output-below">
+          <h3>Output</h3>
+          <h1>Hello World</h1>
+          <h2>Hello World</h2>
+          <h3>Hello World</h3>
+          <h4>Hello World</h4>
+          <h5>Hello World</h5>
+          <h6>Hello World</h6>
+        </div>
+      </section>
     </div>
 
     <script src="js/toggle.js"></script>
-</body>
+  </body>
 </html>

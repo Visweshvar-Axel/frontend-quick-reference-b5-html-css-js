@@ -1,14 +1,24 @@
 // Function to toggle the theme
 function toggleTheme() {
-    const body = document.body;
-    body.classList.toggle('dark-theme');
-    const themeSwitcher = document.querySelector('.theme-switcher');
-    if (body.classList.contains('dark-theme')) {
-        themeSwitcher.textContent = 'Switch to Light Theme';
-    } else {
-        themeSwitcher.textContent = 'Switch to Dark Theme';
-    }
+    document.body.classList.toggle('dark-theme');
+    const button = document.querySelector('.theme-switcher');
+    const isDarkTheme = document.body.classList.contains('dark-theme');
+
+    button.innerHTML = isDarkTheme
+        ? '<i class="fas fa-sun"></i> Switch to Light Theme'
+        : '<i class="fas fa-moon"></i> Switch to Dark Theme';
 }
+
+// function toggleTheme() {
+//     const body = document.body;
+//     body.classList.toggle('dark-theme');
+//     const themeSwitcher = document.querySelector('.theme-switcher');
+//     if (body.classList.contains('dark-theme')) {
+//         themeSwitcher.textContent = 'Switch to Light Theme';
+//     } else {
+//         themeSwitcher.textContent = 'Switch to Dark Theme';
+//     }
+// }
 
 // Function to toggle output on the right
 function toggleOutputRight(outputRightId, outputBelowId, syntaxId) {

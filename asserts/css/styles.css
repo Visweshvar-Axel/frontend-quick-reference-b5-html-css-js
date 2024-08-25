@@ -33,7 +33,8 @@ header {
 }
 
 .toc {
-    margin-top: 20px;
+    margin-top: 55px;
+    max-height: 85%;
     padding: 10px;
     background-color: #f4f4f4;
     border: 1px solid #ccc;
@@ -266,7 +267,7 @@ header {
     align-items: center;
 }
 
-.theme-switcher {
+/* .theme-switcher {
     padding: 10px 20px;
     cursor: pointer;
     border: 1px solid #333;
@@ -274,7 +275,7 @@ header {
     color: #333;
     border-radius: 5px;
     transition: background-color 0.3s, color 0.3s;
-}
+} */
 
 section {
     margin-top: 20px;
@@ -384,3 +385,101 @@ section {
     }
 }
 /* Responsive Styles */
+/* Container for full-width navigation */
+
+/* Container for full-width navigation */
+.nav-container-fluid {
+    width: 100%;
+    background-color: #333; /* Background color for the full-width container */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; /* Ensure the nav is above other content */
+    transition: top 0.3s; /* Smooth transition effect for hiding/showing */
+}
+
+/* Main Navigation Bar Styles */
+.main-nav {
+    max-width: 1200px;  /* Define a maximum width for the content */
+    margin: 0 auto;     /* Center the content */
+    padding: 10px 20px; /* Add padding for spacing */
+}
+
+/* Reset default list styles and align items horizontally */
+.main-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+/* Individual list item styling */
+.main-nav ul li {
+    margin: 0 15px;
+}
+
+/* Styling for the links */
+.main-nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 8px 16px;
+    transition: background-color 0.3s;
+}
+
+/* Hover effect for links */
+.main-nav ul li a:hover {
+    background-color: #007bff;
+    border-radius: 5px;
+}
+
+/* Dark theme styles for the navigation bar */
+.dark-theme .nav-container-fluid {
+    background-color: #1d1d1d; /* Darker background for dark theme */
+}
+
+.dark-theme .main-nav ul li a {
+    color: #fff; /* White text for dark theme */
+}
+
+.dark-theme .main-nav ul li a:hover {
+    background-color: #0056b3; /* Darker hover color for dark theme */
+}
+
+/* Container for full-width navigation */
+/* Updated Theme Switcher Styles */
+.theme-switcher {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: 2px solid #333;
+    background-color: #fff;
+    color: #333;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.theme-switcher:hover {
+    background-color: #007bff;
+    color: #fff;
+    transform: translateY(-2px); /* Hover animation */
+}
+
+.theme-switcher i {
+    margin-right: 8px; /* Space between icon and text */
+}
+
+.dark-theme .theme-switcher {
+    background-color: #333;
+    color: #fff;
+    border-color: #fff;
+}
+
+.dark-theme .theme-switcher:hover {
+    background-color: #0056b3;
+}
+/* Updated Theme Switcher Styles */

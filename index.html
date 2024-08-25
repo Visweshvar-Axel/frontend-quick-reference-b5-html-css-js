@@ -10,6 +10,21 @@
         </style>
     </head>
     <body class="dark-theme">
+        <div class="nav-container-fluid" id="navbar">
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#html">HTML</a></li>
+                    <li><a href="#css">CSS</a></li>
+                    <li><a href="#js">JS</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#others">Others</a></li>
+                    <li>                <button class="theme-switcher" onclick="toggleTheme()">
+                        <i class="fas fa-adjust"></i> <!-- Icon added here -->
+                        Switch to Dark Theme
+                    </button></li>
+                </ul>
+            </nav>
+        </div>
         <!-- Table of Contents -->
         <nav class="toc">
             <h2>Topics</h2>
@@ -45,12 +60,20 @@
             </ul>
         </nav>            
         <div class="container">
+            <!-- Include Font Awesome in your HTML head if not already included -->
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+                    
             <header>
+                <h1>HTML & CSS Cheat Sheet</h1>
+
+            </header>
+
+            <!-- <header>
                 <h1>HTML & CSS Cheat Sheet</h1>
                 <button class="theme-switcher" onclick="toggleTheme()">
                     Switch to Dark Theme
                 </button>
-            </header>
+            </header> -->
             
 
             
@@ -191,7 +214,8 @@
     
 </div>
 
-<script src="asserts/js/Resizing.js"></script>
 <script src="asserts/js/toggle.js"></script>
+<script src="asserts/js/Resizing.js"></script>
+<script src="asserts/js/effects.js"></script>
 </body>
 </html>
